@@ -1,0 +1,433 @@
+/* Start Var */
+:root{
+    --mainColor:#08526d;
+    --secondColor:#ec1c23;
+    --essayColor:#80959e;
+    --mainPadding:100px;
+}
+/* End Var */
+/* Start Component */
+.main-heading{
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+    text-align: center;
+}
+.main-heading h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.main-heading P{
+    color: var(--essayColor);
+}
+/* End Component */
+/* Start header */
+.upper-bar{
+    background-color: var(--mainColor);
+    padding: 15px;
+}
+.upper-bar .row{
+    color: var(--essayColor);
+}
+.upper-bar .Get-Quote{
+    padding: 3px 10px ;
+    margin-left: 20px;
+}
+/* End header */
+/* Start Nav */
+.navbar-brand span:first-child{
+    color: var(--mainColor);
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar-brand span:last-child{
+    color: var(--secondColor);
+    font-weight: bold;
+    font-size: 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.navbar-expand-lg .navbar-nav .active .nav-link {
+    color: var(--secondColor);
+}
+/* End Nav */
+/* Start Slide */
+.carousel-item.active span{
+    display: inline-block;
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 0 25px;
+}
+/* End Slide */
+/* Start Boxes */
+.parent{
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+}
+.parent i{
+    color: var(--secondColor);
+    font-size: 2.5em;
+}
+.parent .box .text{
+    margin-top: 10px;
+    position: relative;
+}
+.parent .box .text h2{
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: bold;
+}
+.parent .box .text p{
+    color: var(--essayColor);
+    line-height: 1.6;
+}
+/* End Boxes */
+/* Start Company-overview" */
+.Company-overview{
+    margin-top: 100px;
+    padding-top: var(--mainPadding) ;
+    padding-bottom: var(--mainPadding);
+    background-color: #f0f5f7;
+}
+.Company-overview h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.Company-overview .text{
+    text-align: center;
+    margin-top: 15px;
+}
+.Company-overview .text p{
+    color: var(--essayColor);
+}
+.Company-overview .text h4{
+    color: var(--essayColor);
+}
+.Company-overview a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    background-color: var(--secondColor);
+    width: fit-content;
+    margin: 20px auto 0;
+}
+/* End Company-overview" */
+/* Start Work */
+/* .work .content{
+    
+} */
+.work ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.work ul li{
+    list-style: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.work ul li.active a{
+    background-color: var(--secondColor);
+    border: none !important;
+    outline: none !important;
+    color: white !important;
+}
+.work ul li a{
+    display: block;
+    text-decoration: none;
+    color:var(--mainColor);
+    border: 1px solid black;
+    padding: 3px 20px;
+}
+.image-container .row .col{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.image-container .row .col img{
+    width: 25%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.image-container .row .col img:hover{
+    opacity: 0.5;
+}
+@media(max-width:768px){
+    .image-container .row .col{
+        flex-direction: column;
+        
+    }
+    .image-container .row .col img{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+.card-mt-3{
+    background: rgb(0 0 0 / 2%);
+}
+.cards .card-body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-left: 5px;
+}
+.cards .card-body h2{
+    margin-top: 15px;
+    font-size: 16px;
+    color: var(--mainColor);
+    padding-left: 10px;
+}
+.cards .card-body p{
+    color: var(--essayColor);
+    line-height: 1.6;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding-left: 10px;
+}
+.cards .card-body a{
+    display: block;
+    text-decoration: none;
+    color: var(--secondColor);
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.card-mt-3 img{
+    padding-left: 10px;
+}
+@media(max-width:768px){
+    .card-mt-3 {
+        margin-top: 30px;
+    }
+}
+/* End Work */
+/* Start price */
+.price{
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+}
+.price .text{
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.price .text .head-text h2{
+    color: var(--mainColor);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.price .text .price-text .normal-price{
+    font-weight: bold;
+    background-color: #eeeeee3b;
+    color: var(--mainColor);
+}
+.price .text .price-text .normal-price span{
+    font-size: 18px;
+    margin-left: -8px;
+}
+.price .text .other-text{
+    margin: 10px 0;
+}
+.price .text .other-text p{
+    margin: 30px 0;
+}
+.price .text .price-text .special-price{
+    color: white;
+    background-color: var(--secondColor);
+    width: 100%;
+    padding: 7px 10px;
+}
+.price .text .price-text .special-price span{
+    font-size: 18px;
+    margin-left: -8px;
+}
+.price .text .normal-buy{
+    display: block;
+    text-decoration: none;
+    color:white ;
+    background-color: var(--secondColor);
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto ;
+    padding: 10px 35px;
+}
+.price .text .special-buy{
+    display: block;
+    text-decoration: none;
+    color:white ;
+    background-color: var(--mainColor);
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto ;
+    padding: 10px 35px;
+}
+/* End price */ 
+/* Start knowing Section */
+.Why-choose-us{
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+}
+.Why-choose-us .image-us{
+    margin-bottom: 20px;
+}
+.Why-choose-us .image-us img{
+    background-size: cover;
+}
+.Why-choose-us .about-us{
+    background-color: var(--mainColor);
+    padding: 30px;
+    color: white;
+}
+.Why-choose-us .about-us h2{
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.Why-choose-us .about-us a{
+    display: block;
+    text-decoration: none;
+    background-color:var(--secondColor) ;
+    padding: 10px 20px;
+    width: fit-content;
+    margin-top: 20px;
+    color: white;
+}
+/* End knowing Section */
+/* Start Achivments */
+.achivments{
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+}
+.achivments .icons{ 
+    text-align: center;
+    margin-bottom: 10px;
+}
+.achivments .icons i{
+    font-size: 30px;
+}
+.achivments .text{
+    margin: 0 auto;
+    text-align: center;
+}
+.achivments .text h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+.achivments .text p{
+    color: var(--secondColor);
+    font-size: 14px;
+}
+/* End Achivments */
+/* Start Contact overlay */
+.contact-overlay{
+    padding-top:calc(var(--mainPadding) / 2 );
+    padding-bottom: calc(var(--mainPadding) / 2);
+    background-color: var(--secondColor);
+}
+.contact-overlay .text{
+    margin-top: 30px;
+    color: white;
+    margin-left:20px;
+}
+.contact-overlay .text p{
+    font-size: 25px;
+    font-weight: 400;
+}
+.contact-overlay .contact-link{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.contact-overlay .contact-link a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    width: fit-content;
+    letter-spacing: 5px;
+}
+/* End Contact overlay */
+/* Start Footer Content */
+.footer{
+    padding-top: var(--mainPadding);
+    padding-bottom: var(--mainPadding);
+}
+.footer .text{
+    margin-top: 10px;
+}
+.footer .text h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+.footer .text span{
+    color: var(--secondColor);
+    margin-left: -5px;
+}
+.footer .text p{
+    margin-top: 20px;
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+.footer .text a{
+    display: block;
+    text-decoration: none;
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.footer .content{
+    margin-top: 10px;
+}
+.footer .heading{
+    margin-bottom: 30px;
+}
+.footer .heading h2{
+    margin-bottom: -8px;
+    font-size: 35px;
+    color: var(--mainColor);
+}
+.footer .list1{
+    display: flex;
+}
+.footer .list1 ul:first-child{
+    list-style: none;
+    margin-left: -30px;
+}
+.footer .list1 ul:last-child{
+    list-style: none;
+}
+.footer .list1 ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--mainColor);
+}
+.footer .list3{
+    margin-top: 10px;
+}
+.footer .list3 h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--mainColor);
+}
+.footer .list3 p{
+    color: var(--mainColor);
+}
+/* End Footer Content */
